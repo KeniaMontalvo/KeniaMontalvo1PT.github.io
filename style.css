@@ -1,13 +1,17 @@
 /* Barra de navegacion */
 
 .navbar {
-  padding: 2rem;
-  background-color: #FDD2BF;
+  padding: 0.3rem;
+  background-color: #191825;
 }
 
 .navbar-collapse {
   align-items: center;
   justify-content: space-between;  
+}
+
+.nav-link {
+  color: #865DFF;
 }
 
 /* Estilos generales */
@@ -22,12 +26,12 @@ section {
 h1 {
   font-size: 2.5rem;
   font-family: 'Rubik Dirt', cursive;
-  color: #420516
+  color: #865DFF
 }
 
 .seccion-oscura {
   color: white;
-  background-color: #420516;
+  background-color: #191825;
 }
 
 .seccion-clara {
@@ -44,7 +48,7 @@ h1 {
 
 .seccion-descripcion {
   font-size: 1.2rem;
-  color: #7D1935;
+  color: #191825;
 }
 
 .seccion-texto {
@@ -54,13 +58,13 @@ h1 {
 .btn-info {
   font-size: 1.1rem;
   margin: 20px;
-  background-color: #420516;
+  background-color: #865DFF;
   color: white;
   border: none
 }
 
 .texto-negro {
-  color: #7D1935;
+  color: #191825;
 }
 
 .texto-blanco {
@@ -70,9 +74,25 @@ h1 {
 /* Seccion Hero */
 
 .hero {
-  background-color: #FDD2BF;
+  /*background-color: #191825;
+  min-height: 450px;
+  text-align: center;*/
+  height: 100vh;
+  background-image: url('/imagenes/espacio.jpg');
+  background-position: center;
+  background-size: cover;
+  animation: animate-background 20s linear infinite;
   min-height: 450px;
   text-align: center;
+}
+
+@keyframes animate-background {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }
 
 .hero-principal {
@@ -87,7 +107,7 @@ h1 {
 
 .hero-principal h2 {
   font-size: 1.5rem;
-  color: #420516;
+  color: #191825;
 }
 
 /* Sobre mi */
@@ -120,13 +140,13 @@ h1 {
 
 .experiencia .columna:hover {
   color: white;
-  background-color: #420516;
+  background-color: #191825;
 }
 
 .experiencia i {
   font-size: 2.5rem;
-  color: #E63E6D;
-  background-color: #FDD2BF;
+  color: white;
+  background-color: #E384FF;
   padding: 8px 19px;
   border-radius: 50%;
 }
@@ -145,6 +165,12 @@ h1 {
 
 .badge {
   margin: 5px;
+}
+
+.badge a {
+  text-decoration: none;
+  outline: none;
+  color: #865DFF
 }
 
 /* Proyectos */
@@ -181,7 +207,7 @@ h1 {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 0;
-  color: #7D1935
+  color: #191825
 }
 
 .proyecto {
@@ -201,7 +227,7 @@ h1 {
 }
 
 .overlay i {
-  color: #7D1935;
+  color: #191825;
   font-size: 60px;
   margin: 10px;
 }
@@ -210,7 +236,7 @@ h1 {
 
 .articulos {
   min-height: 500px;
-  padding: 30px;
+  /*padding: 30px;*/
 }
 
 .articulos .card {
@@ -221,10 +247,34 @@ h1 {
 
 .articulos .card-header {
   font-weight: bold;
-  color: #420516
+  color: #191825;
 }
 
+/*.list-group-item img {
+  width: 10%;
+  height: auto;
+  justify-content: center;
+}
+
+.list-group-item {
+  align-items: center;
+}*/
+
 /* Testimonios */
+
+.list-container h6 {
+  padding: 10px;
+}
+
+.list-container img {
+  width: 50%;
+  height: auto;
+}
+
+.list-container img:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
 
 .testimonios {
   padding: 40px 40px 80px 40px;
@@ -275,7 +325,7 @@ h1 {
 
 .testimonio-info .cargo {
   font-size: 0.9rem;
-  color: #420516;
+  color: #191825;
 }
 
 /* Contacto */
@@ -288,7 +338,7 @@ h1 {
 
 .contacto .rectangulo {
   margin-top: -5rem;
-  background-color: #B42B51;
+  background-color: #865DFF;
   border-radius: 10px;
   box-shadow: 0px 1px 4px 1px white;
 }
@@ -321,7 +371,7 @@ h1 {
 
 .contacto button:hover {
   background-color: white;
-  color: #E63E6D;
+  color: #865DFF;
 }
 
 .contacto button i {
@@ -331,7 +381,7 @@ h1 {
 }
 
 .contacto button:hover i {
-  color: #E63E6D;
+  color: #865DFF;
 }
 
 /* Pie de pagina (footer) */
@@ -373,17 +423,17 @@ footer {
 }
 
 .iconos-redes-sociales a:hover {
-  background-color: white;
-  border: 2px solid #E63E6D;
+  background-color: #865DFF;
+  border: 2px solid white;
 }
 
 .iconos-redes-sociales a:hover i {
-  color: black;
+  color: white;
 }
 
 .derechos-de-autor {
   font-size: 15px;
-  color: #aeaeae;
+  color: #865DFF;
   padding: 20px;
 }
 

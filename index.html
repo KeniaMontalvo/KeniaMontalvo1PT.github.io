@@ -13,7 +13,7 @@
     <title>Kenia Montalvo | Desarrollo Web Front-End</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <link rel="icon" type="image/x-icon" href="imagenes/planeta.png">
    
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -29,21 +29,27 @@
   </head>
   <body>
     <!-- Barra de navegacion -->
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-md navbar-dark">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-toggler">
           <a class="navbar-brand" href="#">
-            <img src="imagenes/icono.png" width="50" alt="Logo de la página web">
+            <img src="imagenes/planeta.png" width="50" alt="Logo de la página web">
           </a>
           <ul class="navbar-nav d-flex justify-content-center align-items-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+              <a class="nav-link" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#educacion">Educación</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#habilidades">Habilidades</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#testimonios">Testimonios</a>
@@ -66,63 +72,72 @@
         <!--Animación con JavaScript-->
         <h2 class="text-primary mb-4" id="typewriter"></h2>
       </div>
-      <div class="hero-inferior">
+      <!--<div class="hero-inferior">
         <img class="hero-inferior-imagen img-fluid" src="imagenes/coding.png" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
-      </div>
+      </div>-->
     </section>
 
     <!-- Sobre mi -->
     <section id="sobre-mi" class="sobre-mi seccion-oscura">
       <div class="contenedor">
         <h2 class="seccion-titulo">Sobre mí</h2>
-        <p class="seccion-texto">Soy muy apasionada en lo que hago, creo soluciones creativas y funcionales utilizando HTML5, CSS3, JavaScript y herramientas como Bootstrap, GitHub y Netlify. He trabajado en varios proyectos personales para mejorar mis habilidades en tecnologías. Uno de mis intereses es escuchar música melancólica y coleccionar álbumes.</p>
+        <p class="seccion-texto">Soy una aprendiz rápida y muy apasionada en todo lo que hago. Siempre estoy buscando aprender nuevas habilidades y técnicas. He trabajado en varios proyectos personales para seguir creciendo en mi carrera como desarrolladora. Me encanta escuchar música melancólica y coleccionar álbumes musicales.</p>
       </div>
     </section>
 
+    <br>
     <!-- Experiencia -->
-    <section class="experiencia seccion-clara">
+    <section id="educacion" class="educacion-seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Educación</h2>
+      
+      <section class="experiencia seccion-clara">
       <div class="container text-center">
         <div class="row">
           <!-- Desarrollo Web -->
           <div class="columna col-12 col-md-4">
             <i class="bi bi-laptop"></i>
             <p class="experiencia-titulo">Desarrollo Web Front-End</p>
-            <p>Me enfoco en crear la interfaz visual y la experiencia de usuario en una página web. Desde el diseño hasta la implementación, asegurando que la página sea fácil de usar, atractiva y funcional.</p>
             <div class="badges-contenedor">
-              <span class="badge text-bg-light">HTML</span>
-              <span class="badge text-bg-light">CSS</span>
-              <span class="badge text-bg-light">JavaScript</span>
+              <span class="badge text-bg-light">Tecnolochicas PRO</span>
+              <span class="badge text-bg-light">ENE-FEB 2023</span>
+            </div>
+            <p>Programa educativo extracurricular intensivo, donde aprendí HTML, CSS, GitHub, JavaScript y conocimientos de empleabilidad para iniciar en el mundo profesional tecnológico.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-light"><a href="#" target="_blank">Certificado en Proceso</a></span>
             </div>
           </div>
           <!-- Articulos -->
           <div class="columna col-12 col-md-4">
             <i class="bi bi-laptop"></i>
-            <p class="experiencia-titulo">Artículos</p>
-            <p>Comparto artículos de interés sobre motivación e inspiración de figuras que se encargan de la divulgación de mujeres en tecnología en mi propia cuenta de <a href="https://www.linkedin.com/in/kenia-montalvo/" target="_blank">LinkedIn</a> que me ayudan en mi camino actual. </p>
+            <p class="experiencia-titulo">Desarrollo Web Full Stack</p>
             <div class="badges-contenedor">
-              <span class="badge text-bg-light">Compartir</span>
-              <span class="badge text-bg-light">Objetivos</span>
-              <span class="badge text-bg-light">Newsletter</span>
+              <span class="badge text-bg-light">U Camp</span>
+              <span class="badge text-bg-light">FEB-AGO 2023</span>
+            </div>
+            <p>Estoy actualmente aprendiendo a programar sitios y a crear aplicaciones web desde cero en un total de cuatro módulos que contienen información sobre React, Node.js, NoSQL.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-light"><a href="#" target="_blank">Certificado en Proceso</a></span>
             </div>
           </div>
           <!-- Estudiante -->
           <div class="columna col-12 col-md-4">
             <i class="bi bi-laptop"></i>
-            <p class="experiencia-titulo">Estudiante</p>
-            <p>Mi pasión por la tecnología me ha llevado a aprender constantemente. Me considero una persona autodidacta y proactiva, en busca de nuevos desafíos y dispuesta a aprender de los errores.</p>
+            <p class="experiencia-titulo">Certificados</p>
+            <p>De forma autodidacta estoy en busca de nuevos conocimientos para mejorar mis habilidades por medio de cursos en línea y estar al tanto de las últimas tendencias en diseño y desarrollo web.</p>
             <div class="badges-contenedor">
-              <span class="badge text-bg-light">Tecnolochicas PRO</span>
-              <span class="badge text-bg-light">Coursera/Platzi</span>
-              <span class="badge text-bg-light">UCamp</span>
+              <span class="badge text-bg-light"><a href="https://drive.google.com/file/d/1tdRbB2yFF4U__7OaFa5ICn2Mam3veQ6O/view?usp=sharing" target="_blank">Diseño UX</a></span>
+              <span class="badge text-bg-light"><a href="https://drive.google.com/file/d/1MK3nzHdOyynDRU0vNAgrPf88O6_p91sD/view?usp=sharing" target="_blank">Programación</a></span>
+              <span class="badge text-bg-light"><a href="https://drive.google.com/file/d/1L1A5XLLMZiCqveTf-rfyVfeKdMa_OnXr/view?usp=sharing" target="_blank">Inglés</a></span>
             </div>
           </div>
         </div>
       </div>
     </section>
+  </section>
 
     <!-- Proyectos -->
     <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
-      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+      <h2 class="seccion-titulo texto-negro">Proyectos</h2>
       <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
       <!-- Galeria de Proyectos -->
       <div class="container text-center proyectos-contenedor">
@@ -238,49 +253,97 @@
         </button>
       </a>
     </section>
+    </div>
 
-    <!-- Articulos -->
-    <section class="articulos justify-content-start">
-      <h2 class="seccion-titulo texto-negro">Objetivos</h2>
+    <!--Skills-->
+    <section id="habilidades" class="habilidades-seccion-clara d-flex flex-column">
+    <h2 class="seccion-titulo texto-negro">Habilidades</h2>
+    <div class="list-container">
+      <br>
+      <ul class="list-unstyled d-flex justify-content-center">
+        <li>
+          <div class="image-container text-center">
+            <img src="imagenes/html.png" alt="Descripción de la imagen 1"><h6>HTML</h6>
+          </div>
+        </li>
+        <li>
+          <div class="image-container text-center">
+            <img src="imagenes/css.png" alt="Descripción de la imagen 2"><h6>CSS</h6>
+          </div>
+        </li>
+        <li>
+          <div class="image-container text-center">
+            <img src="imagenes/js.png" alt="Descripción de la imagen 3"><h6>JavaScript</h6>
+          </div>
+        </li>
+        <li>
+          <div class="image-container text-center">
+            <img src="imagenes/bootstrap.png" alt="Descripción de la imagen 3"><h6>Bootstrap</h6>
+          </div>
+        </li>
+        <li>
+          <div class="image-container text-center">
+            <img src="imagenes/nodejs.png" alt="Descripción de la imagen 3"><h6>Node.js</h6>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <a href="https://drive.google.com/file/d/1wqqFjtZJkKxXJGp0SIVxA_p17evCmbVN/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="btn btn-info">
+        Ver CV
+        <i class="bi bi-arrow-right-circle-fill"></i>
+      </button>
+    </a>
+  </section>
+
+    <!--<section class="articulos justify-content-start">
+      <h2 class="seccion-titulo texto-negro">Habilidades</h2>
       <div class="card">
         <div class="card-header">
           Algunos de ellos...
         </div>
-        <ul class="list-group list-group-flush">
-          <a href="https://nancynsalazar.medium.com/gu%C3%ADa-r%C3%A1pida-para-construir-tu-portafolio-como-programador-a-9f02daeabb12" target="_blank" rel="noopener noreferrer">
-            <li class="list-group-item">
-              Cómo construir un buen portafolio como programador
-            </li>
-          </a>
-          <a href="https://nancynsalazar.medium.com/c%C3%B3mo-ser-un-a-mejor-programador-a-749c1bf98990" target="_blank" rel="noopener noreferrer">
-            <li class="list-group-item">
-              Cómo ser un(a) mejor programador(a)
-            </li>
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <li class="list-group-item">
-              Mejorar mis habilidades técnicas en lenguajes de programación web como HTML, CSS y JavaScript.
-            </li>
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <li class="list-group-item">
-              Adquirir experiencia práctica en el uso de herramientas y frameworks como React, Vue o Angular
-            </li>
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <li class="list-group-item">
-              Desarrollar mi habilidad para trabajar en equipo, colaborar y comunicar mis ideas de manera efectiva con mis compañeros de trabajo.
-            </li>
-          </a>
-        </ul>
-      </div>
-      <a href="#" target="_blank" rel="noopener noreferrer">
+        <ul class="list-group list-group-flush"> -->
+
+          <!--<a href="#" target="_blank" rel="noopener noreferrer">-->
+
+            <!-- <li class="list-group-item">
+              <img src="imagenes/html.png"><p>HTML</p>
+            </li> -->
+
+          <!--</a>-->
+          <!--<a href="#">-->
+            
+            <!--<li class="list-group-item"><img src="imagenes/css.png"><p>CSS</p>
+            </li>-->
+
+          <!--</a>-->
+          <!--<a href="#" target="_blank" rel="noopener noreferrer">-->
+            
+            <!--<li class="list-group-item"><img src="imagenes/js.png"><p>JavaScript</p>
+            </li>-->
+
+          <!--</a>-->
+          <!--<a href="#" target="_blank" rel="noopener noreferrer">-->
+           
+            <!--<li class="list-group-item"><img src="imagenes/bootstrap.png"><p>Bootstrap</p>
+            </li>-->
+
+          <!--</a>-->
+          <!--<a href="#" target="_blank" rel="noopener noreferrer">-->
+            
+            <!--<li class="list-group-item"><img src="imagenes/nodejs.png"><p>Node.js</p>
+            </li>-->
+
+          <!--</a>-->
+        <!--</ul>
+      </div>-->
+      <!--<a href="#" target="_blank" rel="noopener noreferrer">
         <button type="button" class="btn btn-info">
           Ver más objetivos
           <i class="bi bi-arrow-right-circle-fill"></i>
         </button>
       </a>
-    </section>
+    </section>-->
 
     <!-- Testimonios -->
     <section id="testimonios" class="testimonios seccion-clara">
@@ -361,7 +424,7 @@
               ¡Hablemos!
             </div>
             <div class="col-12 col-md-4 descripcion">
-              Trabajemos juntos e iniciemos tu proyecto deseado, para mejorar al máximo tu visión y ambiente de trabajo colaborativo.
+              Estoy comprometida con el éxito de los proyectos y siempre estoy buscando nuevas formas de innovar y mejorar.
             </div>
             <div class="col-12 col-md-4">
               <a href="mailto:kenlimonra@gmail.com">
@@ -378,12 +441,9 @@
     
     <!-- Pie de pagina (footer) -->
     <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
-      <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
-      <p class="footer-texto text-center">Aprendamos todos los días.<br>Compartamos nuevas experiencias.</p>
+      <img class="footer-logo" src="imagenes/planeta.png" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Cuidando los detalles para un resultado excepcional.</p>
       <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-        <a href="https://twitter.com/kenliera" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-twitter"></i>
-        </a>
         <a href="https://github.com/KeniaMontalvo" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-github"></i>
         </a>
@@ -397,7 +457,7 @@
           <i class="bi bi-envelope"></i>
         </a>
       </div>
-      <div class="derechos-de-autor">Creado con ❤️ por Kenia Montalvo (2023) &#169;</div>
+      <div class="derechos-de-autor">Creado con 💜 por Kenia Montalvo (2023) &#169;</div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
